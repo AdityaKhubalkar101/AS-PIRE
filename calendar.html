@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AS-pire ✦ Calendar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="starCanvas"></canvas>
+<div class="mesh"></div>
+
+<div class="top-nav">
+  <div class="header">
+    <div class="logo-wrap" onclick="window.location.href='index.html'" style="cursor: pointer;">
+      <span class="logo-AS">AS</span><span class="logo-dash">-</span><span class="logo-pire">pire</span>
+    </div>
+  </div>
+  <div class="nav-actions">
+    <button class="icon-btn" onclick="window.location.href='index.html'">🔙 Back to App</button>
+  </div>
+</div>
+
+<div class="wrap" style="padding-top: 100px;">
+  <div class="all-done show" style="margin-bottom: 30px; text-align: left;">
+    <div class="all-done-title" style="font-size: 28px;">Time Machine ✦</div>
+    <div class="all-done-sub">Select a date to view completed tasks.</div>
+    
+    <div style="margin-top: 20px;">
+      <input type="date" id="calendarDate" class="t-input" style="max-width: 250px;">
+    </div>
+  </div>
+
+  <div id="historyResults">
+    <div class="empty">
+      <div class="empty-icon">📅</div>
+      <div class="empty-txt">Select a date above to load history.</div>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="calendar.js"></script>
+</body>
+</html>
